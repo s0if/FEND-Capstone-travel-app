@@ -1,0 +1,17 @@
+#app-main {
+  margin-top: 16vh;
+  margin-bottom: 7.5rem;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 11.875rem 1fr;
+  row-gap: 1.25rem;
+  height: 100%;
+  overflow: visible;
+  padding: 0.3125rem 0.625rem;
+}
+
+@media (min-width: 295px) {
+  #app-main {
+    padding: 0.3125rem 0;
+  }
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Plan your trips with accurate weather forecasts for your destination.">
+    <meta name="keywords" content="travel planner, weather forecast, trip organizer, destination weather">
+    <meta name="author" content="Alex Smith">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TripWeather Planner</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your compiled CSS file -->
+</head>
+<body>
+    <header id="header">
+        <div class="logo-container">
+            <i class="fas fa-map-marked-alt"></i>
+            <h1 class="app-title">TripWeather Planner</h1>
+        </div>
+        <div class="slogan">
+            <p>Plan your journey with confidence <i class="fas fa-route"></i></p>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <section class="input-section" id="trip-input">
+            <form class="trip-form">
+                <div class="form-group">
+                    <label for="destination" class="form-label">Destination:</label>
+                    <input type="text" id="destination" placeholder="Enter your destination">
+                </div>
+                <div class="form-group">
+                    <label for="departure-date" class="form-label">Departure Date:</label>
+                    <input type="text" id="departure-date" class="flatpickr" placeholder="Select date">
+                </div>
+                <button id="submit-btn" class="btn-primary" type="submit">Get Forecast</button>
+            </form>
+        </section>
+
+        <section class="results-section" id="trip-results">
+            <!-- Results will be dynamically inserted here -->
+        </section>
+    </main>
+
+    <footer id="footer">
+        <nav class="footer-navigation">
+            <ul class="footer-links">
+                <li class="footer-item divider">
+                    <a href="#main-content" class="footer-link"><i class="fas fa-search-location"></i> Search</a>
+                </li>
+                <li class="footer-item">
+                    <a href="#trip-results" class="footer-link"><i class="fas fa-map-marked"></i> Results</a>
+                </li>
+            </ul>
+        </nav>
+    </footer>
+
+    <script>
+        // Register service worker if supported
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/service-worker.js');
+            });
+        }
+    </script>
+</body>
+</html>

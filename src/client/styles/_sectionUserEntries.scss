@@ -1,0 +1,64 @@
+#user-entries {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+  }
+  
+  .holder-form {
+    height: 9.0625rem; 
+    width: 18.75rem; 
+    padding: 1.5625rem 1.25rem; 
+    font: $font-app;
+    font-weight: 400;
+    background-color: $complementary-color;
+    border-radius: 0.625rem; 
+    display: grid;
+    row-gap: 0.625rem; 
+    justify-content: center;
+    justify-items: center;
+    border-radius: 3.125rem 0 3.125rem 0; 
+  }
+  
+  .label-place {
+    margin-right: 0.3125rem; 
+    line-height: 1.5625rem; 
+  }
+  
+  .label-date {
+    margin-right: 0.3125rem; 
+    line-height: 1.5625rem; 
+  }
+  
+  #date {
+    width: 10.3125rem; 
+  }
+  
+  #place {
+    width: 10.3125rem; 
+    height: 1.625rem; 
+  }
+  
+  .input {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+  }
+  
+  #generate {
+    margin-top: 0.3125rem; 
+  }
+  
+  @media (max-width: 340px) {
+    .holder-form {
+      width: auto;
+      height: auto;
+      padding: 1.5625rem 0.8125rem; 
+    }
+  }
+  
+  @media (max-width: 275px) {
+    .input {
+      flex-direction: column;
+    }
+  }
