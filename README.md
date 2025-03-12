@@ -19,16 +19,19 @@ This project focuses on:
 - **Testing**: Jest  
 - **APIs**: Geonames, Weatherbit, Pixabay  
 
+## Prerequisites  
+- **Node.js**: Version 16 or newer (`>=16.x`) is required to run this project.  
+  - To check your Node.js version, run:  
+    ```bash
+    node -v
+    ```  
+  - If you need to install or upgrade Node.js, visit the [official Node.js website](https://nodejs.org/).  
+
 ## Installation  
 1. Clone the repository:  
    ```bash
    git clone [repository-url]
    cd [project-directory]
-   ```  
-2. Install dependencies:  
-   ```bash
-   npm install
-   ```  
 
 ## Running the Application  
 ### Production Mode  
