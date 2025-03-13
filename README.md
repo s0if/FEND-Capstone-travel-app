@@ -20,7 +20,7 @@ This project focuses on:
 - **APIs**: Geonames, Weatherbit, Pixabay  
 
 ## Prerequisites  
-- **Node.js**: Version 16 or newer (`>=16.x`) is required to run this project.  
+- **Node.js**: Version 20 or newer (`>=20.x`) is required to run this project.  
   - To check your Node.js version, run:  
     ```bash
     node -v
